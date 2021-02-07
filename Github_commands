@@ -1,0 +1,48 @@
+
+### to install github 
+sudo apt-get install git-all
+
+## to check version of git
+
+git --version || git version
+
+
+### to confiure github
+
+git config --global user.name "your_username"
+
+git config --global user.email "your_email_address@example.com"
+
+git config --global --list
+
+
+### Creating a local repository
+Create a folder on your system. This will serve as a local repository which will later be pushed onto the GitHub website. Use the following command:
+
+git init Mytest
+
+### change the directory to newly created  local repository
+ cd Mytest
+ 
+ ####  create and then Add files and folders into newly created repository
+ 
+git add README
+git add sample.c
+
+
+#### commit changes 
+
+git commit -m "comment to changes made"
+
+
+### get the remote acess of repository you already created on  your github account with the same name as local repository
+
+git remote add origin https://github.com/yourUsername/yourRepository.git
+
+
+### push the new files and folders created or chanes made in the exisitin one on to the github repository
+
+git push origin master
+
+
+Give usename and password for github account
